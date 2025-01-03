@@ -44,6 +44,7 @@ export default class Game {
     this.cells.forEach((cell) =>
       cell.addEventListener("click", this.handleCellClick)
     );
+
     this.restartButton.addEventListener("click", this.handleRestart);
     //flag to indicate game over
     this.gameOver = false;
@@ -171,7 +172,7 @@ export default class Game {
 
     this.cells.forEach((cell) => {
       cell.textContent = "";
-      cell.classlist.remove("winner");
+      cell.classList.remove("winner");
       cell.addEventListener("click", this.handleCellClick);
     });
 
