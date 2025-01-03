@@ -53,7 +53,7 @@ export default class Game {
   updateScoreDisplay() {
     this.scoreDisplay.innerHTML = `
     <p>${this.player1.name} (X): ${this.player1Score}</p>
-    <p>${this.player2.name} (X): ${this.player2Score}</p>
+    <p>${this.player2.name} (O): ${this.player2Score}</p>
     `;
   }
 
